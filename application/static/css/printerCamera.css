@@ -1,0 +1,52 @@
+h1 {
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.takePicture {
+    background-color: rgb(47, 243, 47);
+    border-color: green;
+    border-radius: .75em;
+    font-size: 18px;
+    height: 40px;
+    width: 125px;
+    color: black;
+}
+
+.left,.right,.reset,.update {
+    background-color: lightblue;
+    border-color: blue;
+    border-radius: 10px;
+    border-radius: .75em;
+    font-size: 18px;
+    height: 40px;
+    width: 75px;
+    font-size: 18px;
+    color: black;
+}
+
+.button {
+    background-color: lightblue;
+    border-color: blue;
+    border-radius: 10px;
+    border-radius: .75em;
+    font-size: 18px;
+    height: 40px;
+    width: 75px;
+    font-size: 18px;
+    color: black;
+}
+
+.labels {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    background-color: rgb(47, 243, 47);
+    border-color: black;
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

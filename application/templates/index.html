@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prusa Shop Camera</title>
+    <link rel="stylesheet" href="../static/css/printerCamera.css">
+  </head>
+  
+  <body>
+    <form action='/camera' method="post">
+      <table border="0" cellpadding="10">
+      <tr>
+        <td colspan=4 align="center"><h1>Prusa Shop Camera</h1></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan=2 align="center"><input type="submit" name="buttonName" class="takePicture" value="Take Picture"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td rowspan=2><input type="submit" name="buttonName" class="left" value="Left"></td>
+        <td cellpadding=0><label for="curr" class="labels">Current Angle (deg):</label></td>
+        {% if current %}
+          <td align="center"><input type="text" id="curr" class="text" name="current" size="1" value={{current}} required></td>
+        {% else %}
+          <td align="center"><input type="text" id="curr" class="text" name="current" size="1" required></td>
+        {% endif %}
+        <td rowspan=2><input type="submit" name="buttonName" class="right" value="Right"></td>
+      </tr> 
+      <tr>
+        <td cellpadding=0><label for="inc" class="labels">Increment (deg):</label></td>
+        {% if increment %}
+          <td align="center"><input type="text" id="inc" class="text" name="increment" size="1" value={{increment}} required></td>
+        {% else %}
+          <td align="center"><input type="text" id="inc" class="text" name="increment" size="1" required></td>
+        {% endif %}
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan=2 align="center"><input type="submit" name="buttonName" class="reset" id="Reset" value="Reset"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </form>
+</body>
+<html>
